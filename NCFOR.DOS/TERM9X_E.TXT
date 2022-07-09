@@ -1,0 +1,73 @@
+
+                Remote control by the NORTON-COMMANDER Term9X-program
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Settings
+^^^^^^^^^^^
+1.1 term90.exe
+^^^^^^^^^^^^^^         
+
+Under "Settings \ Interface":
+
+                    Port: choose the serial port not in use, i.e. COM2.
+
+                    Baud rate: 19200 (recommended)
+
+                    Data bits: 8
+
+                    Parity bit: no
+
+                    Stop bits: 2
+
+                    Data transfer: switch XON/XOFF off and RTS/CTS on 
+
+
+Under "Settings \ Terminal": the option `ANSI` must be selected.
+Under "Settings \": the option `ECHO` must be selected.
+
+
+1.2 term95.exe
+^^^^^^^^^^^^^^
+
+Under "Settings \ Driver": the option `STANDARD` must be selected.
+
+Under "Settings \ Line...": 
+
+                    Port: choose the serial port not in use, i.e. COM2.
+
+                    Baud rate: 19200 (recommended)
+
+                    Data bits: 8
+
+                    Parity bit: no
+
+                    Stop bits: 2
+
+                    Data transfer: switch XON/XOFF off and RTS/CTS on 
+
+
+Under "Settings \ Terminal": the option `ANSI` must be selected.
+Under "Settings \": the option `ECHO` must be selected.
+
+
+
+2. Remote control
+^^^^^^^^^^^^^^^^^
+
+After all settings have been made, the data transfer can be started.
+
+Press < Space > and < Enter > on the keyboard.
+This sets the instrument to remote control mode, indicated on the front panel
+by the RM-LED on condition.
+From now on, each command can be input by the keyboard, i.e. < vers? >.
+
+Example: 
+Activate channel II and simultaneously set the channel II attenuator to 
+5mV/div.
+
+Execution:
+Input < ch2= >, press and hold  "Alt Gr" key and input the number < 018 >.
+After releasing the "Alt Gr" key, the instrument is set. The return code is
+displayed after the transmitted command.
+
+The value 0 ("Alt Gr" < 000 >) will not be transmitted.

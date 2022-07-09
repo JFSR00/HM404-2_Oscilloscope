@@ -1,0 +1,68 @@
+             Fernsteuerung Åber Term9X-Programm des NORTON-COMMANDER
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~         
+
+
+1. Einstellungen
+^^^^^^^^^^^^^^^^^
+1.1 term90.exe
+^^^^^^^^^^^^^^
+
+Unter 'Einstellungen\Schnittstelle':
+                              Port:     Ihr freies serielles Port,
+                                        z.B. COM2.
+
+                              Baudrate: Empfohlen 19200.
+
+                              Datenbits: 8 BITS
+
+                              ParitÑt:  Keine
+
+                              StopBits: 2 BITS
+
+                              Datenflu·: Xon/Xoff auf aus.
+                                         RTS/CTS/ auf an.
+
+Unter 'Einstellungen\Terminal' die Option 'ANSI' markieren.
+Unter 'Einstellungen\' die Option 'Echo' markieren.
+
+1.2 term95.exe
+^^^^^^^^^^^^^^^
+
+Unter 'Einstellungen\Treiber' die Option 'Standard' markieren.
+Unter 'Einstellungen\Leitung...': 
+                              Port:     Ihr freies serielles Port,
+                                        z.B. COM2.
+
+                              Baudrate: Empfohlen 19200.
+
+                              Datenbits: 8 BITS
+
+                              ParitÑt:  Keine
+
+                              StopBits: 2 BITS
+
+                              Datenflu·: Xon/Xoff auf aus.
+                                         RTS/CTS/ auf an.
+
+Unter 'Einstellungen\Terminal-Emulation' die Option 'ANSI' markieren.
+Unter 'Einstellungen\Terminal Einstellungen' die Option 'Echo' markieren.
+
+2. Fernsteuerung
+^^^^^^^^^^^^^^^^
+
+Sind alle Einstellungen richtig vorgenommen worden, kann mit der öbertragung 
+begonnen werden. 
+
+Remote On: Geben Sie nacheinander ein Leerzeichen und ein Enter ein.
+Das GerÑt begibt sich in den Fernsteuermodus, ersichtlich an der Remote-LED.
+Jetzt kînnen Sie jeden beliebigen Befehl eingeben, wie z.B. 'vers?'.
+
+Beispiel: 
+Kanal 2 des GerÑtes einschalten und gleichzeitig auf 5mV einstellen.
+Geben Sie ein 'ch2=', drÅcken Sie die Taste "Alt Gr" und gleichzeitig auf der
+Nummerntastatur die Zahlen 0,1 und 8 nacheinander. Nach loslassen der "Alt Gr"
+Taste stellt sich das GerÑt ein.
+Der Returncode wird hinter dem gesendeten Befehl dargestellt.
+
+Der Wert 0 ("Alt Gr" 000) wird nicht Åbertragen.
+
